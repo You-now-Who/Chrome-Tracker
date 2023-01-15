@@ -1,0 +1,251 @@
+body {
+    font-size: 12px;
+    font-family: 'Helvetica', sans-serif;
+    min-height: 550px;
+    min-width: 250px;
+  }
+  .container-skills {
+      margin: 20px auto 0 auto;
+    max-width: 400px;
+  }
+  
+  .bar {
+    position: relative;
+      background-color: #d8d8d8;
+      height: 20px;
+      margin: 0 0 20px 0;
+      border-radius: 25px;
+  }
+  .bar-fill {
+    position: absolute;
+    height: 20px;
+    border-radius: 25px;
+  }
+  .bar-title {
+    position: relative;
+      font-size: 1em;
+      text-align: left;
+      margin: 0 0 5px 0;
+  }
+  .percent {
+    position: absolute;
+      right: 0;
+  }
+  
+  /* Animations Below - Replace ease-out with infinite for infinite loop*/
+  /*Edit here for html*/  
+  .bar-fill-intelligentowl {
+      width: 90%;
+      font-size: 18px;
+    background-color: blue;
+      animation: bar-fill-html 2s ease-out;
+      -moz-animation: bar-fill-html 2s ease-out;
+    -webkit-animation: bar-fill-html 2s ease-out;
+  }
+  @keyframes bar-fill-intelligentowl {
+      0% {
+          width: 0px;
+      }
+  
+      100% {
+          width: 90%;
+      }
+  }
+  @-moz-keyframes bar-fill-intelligentowl {
+      0% {
+          width: 0px;
+      }
+  
+      100% {
+          width: 90%;
+      }
+  }
+  @-webkit-keyframes bar-fill-intelligentowl {
+      0% {
+          width: 0px;
+      }
+  
+      100% {
+          width: 90%;
+      }
+  }
+  /**/
+  .bar-fill-scholar {
+    width: 90%;
+    font-size: 18px;
+  background-color: green;
+    animation: bar-fill-html 2s ease-out;
+    -moz-animation: bar-fill-html 2s ease-out;
+  -webkit-animation: bar-fill-html 2s ease-out;
+}
+@keyframes bar-fill-scholar {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-moz-keyframes bar-fill-scholar {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes bar-fill-scholar {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+/**/
+.bar-fill-educationalscholar {
+    width: 90%;
+    font-size: 18px;
+  background-color: orange;
+    animation: bar-fill-html 2s ease-out;
+    -moz-animation: bar-fill-html 2s ease-out;
+  -webkit-animation: bar-fill-html 2s ease-out;
+}
+@keyframes bar-fill-educationalscholar {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-moz-keyframes bar-fill-educationalscholar {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes bar-fill-educationalscholar {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+/**/
+.bar-fill-financialinvestor {
+    width: 90%;
+    font-size: 18px;
+  background-color: purple;
+    animation: bar-fill-html 2s ease-out;
+    -moz-animation: bar-fill-html 2s ease-out;
+  -webkit-animation: bar-fill-html 2s ease-out;
+}
+@keyframes bar-fill-financialinvestor {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-moz-keyframes bar-fill-financialinvestor {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes bar-fill-financialinvestor {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+/**/
+.bar-fill-stylishinfluencer {
+    width: 90%;
+    font-size: 18px;
+  background-color: red;
+    animation: bar-fill-html 2s ease-out;
+    -moz-animation: bar-fill-html 2s ease-out;
+  -webkit-animation: bar-fill-html 2s ease-out;
+}
+@keyframes bar-fill-stylishinfluencer {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-moz-keyframes bar-fill-stylishinfluencer {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes bar-fill-stylishinfluencer {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+/**/
+.bar-fill-geekycoder {
+    width: 90%;
+    font-size: 18px;
+  background-color: lightskyblue;
+    animation: bar-fill-html 2s ease-out;
+    -moz-animation: bar-fill-html 2s ease-out;
+  -webkit-animation: bar-fill-html 2s ease-out;
+}
+@keyframes bar-fill-geekycoder {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-moz-keyframes bar-fill-geekycoder {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes bar-fill-geekycoder {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
