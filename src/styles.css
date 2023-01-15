@@ -30,181 +30,373 @@ body {
   .percent {
     position: absolute;
       right: 0;
+      /* border-radius: 25px; */
   }
   
+  /* const skills = ["coder", "work", "gaming", "entertainment", "education", "influencer", "financial", "universal", "gk", "other"]; */
+
   /* Animations Below - Replace ease-out with infinite for infinite loop*/
   /*Edit here for html*/  
-  .bar-fill-html {
-      width: 90%;
-    background-color: #e44d26;
-      animation: bar-fill-html 2s ease-out;
-      -moz-animation: bar-fill-html 2s ease-out;
-    -webkit-animation: bar-fill-html 2s ease-out;
-  }
-  @keyframes bar-fill-html {
-      0% {
-          width: 0px;
-      }
   
-      100% {
-          width: 90%;
-      }
-  }
-  @-moz-keyframes bar-fill-html {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 90%;
-      }
-  }
-  @-webkit-keyframes bar-fill-html {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 90%;
-      }
-  }
-  /*Edit here for Javascript*/
-  .bar-fill-javascript {
-      width: 60%;
-    background-color: #f8dc3d;
-    animation: bar-fill-javascript 2s ease-out;
-      -moz-animation: bar-fill-javascript 2s ease-out;
-    -webkit-animation: bar-fill-javascript 2s ease-out;
-  }
-  @keyframes bar-fill-javascript {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 60%;
-      }
-  }
-  @-moz-keyframes bar-fill-javascript {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 60%;
-      }
-  }
-  @-webkit-keyframes bar-fill-javascript {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 60%;
-      }
-  }
-  /*Edit here for Jquery*/
-  .bar-fill-jquery{
-      width: 70%;
-    background-color: #131b28;
-    animation: bar-fill-jquery 2s ease-out;
-      -moz-animation: bar-fill-jquery 2s ease-out;
-    -webkit-animation: bar-fill-jquery 2s ease-out;
-  }
-  @keyframes bar-fill-jquery {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 70%;
-      }
-  }
-  @-moz-keyframes bar-fill-jquery {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 70%;
-      }
-  }
-  @-webkit-keyframes bar-fill-jquery {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 70%;
-      }
-  }
-  /*Edit here for Responsive*/
-  .bar-fill-responsive{
-      width: 90%;
-    background-color: #429f46;
-    animation: bar-fill-responsive 2s ease-out;
-      -moz-animation: bar-fill-responsive 2s ease-out;
-    -webkit-animation: bar-fill-responsive 2s ease-out;
-  }
-  @keyframes bar-fill-responsive {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 90%;
-      }
-  }
-  @-moz-keyframes bar-fill-responsive {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 90%;
-      }
-  }
-  @-webkit-keyframes bar-fill-responsive {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 90%;
-      }
-  }
-  /*Edit here for Photoshop*/
-  .bar-fill-photoshop{
-      width: 20%;
-    background-color: #0a73dc;
-    animation: bar-fill-photoshop 2s ease-out;
-      -moz-animation: bar-fill-photoshop 2s ease-out;
-    -webkit-animation: bar-fill-photoshop 2s ease-out;
-  }
-  @keyframes bar-fill-photoshop {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 20%;
-      }
-  }
-  @-moz-keyframes bar-fill-photoshop {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 20%;
-      }
-  }
-  @-webkit-keyframes bar-fill-photoshop {
-      0% {
-          width: 0px;
-      }
-  
-      100% {
-          width: 20%;
-      }
-  }
+  .bar-fill-coder {
+    width: 0%;
+    font-size: 18px;
+  background-color: rgb(71, 71, 237);
+    animation: bar-fill-html 2s ease-out;
+    -moz-animation: bar-fill-html 2s ease-out;
+  -webkit-animation: bar-fill-html 2s ease-out;
+}
+@keyframes bar-fill-coder {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-moz-keyframes bar-fill-coder {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes bar-fill-coder {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+.bar-fill-work {
+    width: 0%;
+    font-size: 18px;
+  background-color: rgb(65, 188, 75);
+    animation: bar-fill-css 2s ease-out;
+    -moz-animation: bar-fill-css 2s ease-out;
+  -webkit-animation: bar-fill-css 2s ease-out;
+}
+@keyframes bar-fill-work {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+@-moz-keyframes bar-fill-work {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+@-webkit-keyframes bar-fill-work {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.bar-fill-gaming {
+    width: 0%;
+    font-size: 18px;
+  background-color: blue;
+    animation: bar-fill-js 2s ease-out;
+    -moz-animation: bar-fill-js 2s ease-out;
+  -webkit-animation: bar-fill-js 2s ease-out;
+}
+@keyframes bar-fill-gaming {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+@-moz-keyframes bar-fill-gaming {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+@-webkit-keyframes bar-fill-gaming {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.bar-fill-entertainment {
+    width: 0%;
+    font-size: 18px;
+  background-color: rgb(219, 99, 195);
+    animation: bar-fill-js 2s ease-out;
+    -moz-animation: bar-fill-js 2s ease-out;
+  -webkit-animation: bar-fill-js 2s ease-out;
+}
+@keyframes bar-fill-entertainment {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+@-moz-keyframes bar-fill-entertainment {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+@-webkit-keyframes bar-fill-entertainment {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+.bar-fill-education {
+    width: 0%;
+    font-size: 18px;
+  background-color: rgb(213, 188, 48);
+    animation: bar-fill-js 2s ease-out;
+    -moz-animation: bar-fill-js 2s ease-out;
+  -webkit-animation: bar-fill-js 2s ease-out;
+}
+
+@keyframes bar-fill-education {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+@-moz-keyframes bar-fill-education {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+@-webkit-keyframes bar-fill-education {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.bar-fill-influencer {
+    width: 0%;
+    font-size: 18px;
+  background-color: rgb(226, 88, 88);
+    animation: bar-fill-js 2s ease-out;
+    -moz-animation: bar-fill-js 2s ease-out;
+  -webkit-animation: bar-fill-js 2s ease-out;
+}
+@keyframes bar-fill-influencer {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+@-moz-keyframes bar-fill-influencer {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+@-webkit-keyframes bar-fill-influencer {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+.bar-fill-financial {
+    width: 0%;
+    font-size: 18px;
+  background-color: rgb(126, 218, 252);
+    animation: bar-fill-js 2s ease-out;
+    -moz-animation: bar-fill-js 2s ease-out;
+  -webkit-animation: bar-fill-js 2s ease-out;
+}
+@keyframes bar-fill-financial {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+@-moz-keyframes bar-fill-financial {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+@-webkit-keyframes bar-fill-financial {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+.bar-fill-universal {
+    width: 0%;
+    font-size: 18px;
+  background-color: rgb(235, 97, 97);
+    animation: bar-fill-js 2s ease-out;
+    -moz-animation: bar-fill-js 2s ease-out;
+  -webkit-animation: bar-fill-js 2s ease-out;
+}
+@keyframes bar-fill-universal {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+@-moz-keyframes bar-fill-universal {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+@-webkit-keyframes bar-fill-universal {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+.bar-fill-gk {
+    width: 0%;
+    font-size: 18px;
+  background-color: rgb(66, 225, 159);
+    animation: bar-fill-js 2s ease-out;
+    -moz-animation: bar-fill-js 2s ease-out;
+  -webkit-animation: bar-fill-js 2s ease-out;
+}
+@keyframes bar-fill-gk {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 10%;
+    }
+}
+@-moz-keyframes bar-fill-gk {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 10%;
+    }
+}
+@-webkit-keyframes bar-fill-gk {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 10%;
+    }
+}
+
+.bar-fill-other {
+    width: 0%;
+    font-size: 18px;
+  background-color: rgb(161, 38, 214);
+    animation: bar-fill-js 2s ease-out;
+    -moz-animation: bar-fill-js 2s ease-out;
+  -webkit-animation: bar-fill-js 2s ease-out;
+}
+@keyframes bar-fill-other {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 5%;
+    }
+}
+@-moz-keyframes bar-fill-other {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 5%;
+    }
+}
+@-webkit-keyframes bar-fill-other {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 5%;
+    }
+}
+
+

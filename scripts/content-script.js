@@ -1,3 +1,4 @@
+// console.log("REACHED ENOUGH TO TRIGGER THE MESSAGE")
 // Function to get the domain from the URL
 function getDomain(url) {
     var domain;
@@ -19,7 +20,9 @@ function getDomain(url) {
     return domain;
 }
 
+
 const sites = {
+    "scholar.google.com": "education",
     "youtube.com":  "entertainment",
     "blogger.com":  "entertainment ",
     "google.com":  "universal",
@@ -219,7 +222,7 @@ const sites = {
     "skillshare.com":  "coder",
     "upwork.com":  "coder",
     "internshala.com":  "coder"
-    }
+    };
 
 var currTimeElapsed = 0;
 var flag = 0;
@@ -235,6 +238,7 @@ chrome.runtime.onMessage.addListener(
                   "from the extension");
       if (request.msg === "tabChanged")
       {
+       
         // alert(getDomain(request.tab.url));
         var currDomain = getDomain(request.tab.url);
         
@@ -267,21 +271,22 @@ chrome.runtime.onMessage.addListener(
                     if (res.tabStatus === true)
                     {
                         chrome.storage.local.get(["domains"], function(result) {
-                            console.log(result.domains);
+                            // console.log(result.domains);
 
                             
 
                             result.domains[currDomain].time += 1;
                             
                             chrome.storage.local.set({domains: result.domains});
-                            console.log(result.domains[currDomain].time);
+                            // console.log(result.domains[currDomain].time);
                             // chrome.runtime.sendMessage({message: "updateTime", time: result.domains[currDomain].time});
                             // document.getElementById("time").innerHTML = result.domains[currDomain].time;
                             // console.log(result.domains[currDomain].time + 1)
                         });
 
                         chrome.storage.local.get(["skills"], function(result) {
-                            console.log(result.skills);
+                            console.log(currDomain)
+                            console.log(sites[currDomain]);
 
                             var category = undefined;
                             if (sites[currDomain] !== undefined) {
@@ -290,9 +295,11 @@ chrome.runtime.onMessage.addListener(
                             else {
                                 var category = "other";
                             }    
-
-                            result.skills[category].time += 1;
+                            
+                            result.skills[category] += 1;
+                            console.log(result.skills)
                             chrome.storage.local.set({skills: result.skills});
+                            
                             // chrome.runtime.sendMessage({message: "updateTime", time: result.domains[currDomain].time});
                             // document.getElementById("time").innerHTML = result.domains[currDomain].time;
                             // console.log(result.domains[currDomain].time + 1)

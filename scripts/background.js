@@ -1,4 +1,4 @@
-import "crx-hotreload";
+// import "crx-hotreload";
 // import sites from './sites.json';
 // console.log(sites);
 
