@@ -1,3 +1,5 @@
+import "crx-hotreload";
+
 async function getCurrentTab() {
     let queryOptions = { active: true, lastFocusedWindow: true };
     // `tab` will either be a `tabs.Tab` instance or `undefined`.
@@ -6,26 +8,6 @@ async function getCurrentTab() {
   }
 
 var old_tab = null;
-
-// // Get the status of active tab and send it to the content script
-// chrome.runtime.onMessage.addListener(
-//     async function(request, sender, sendResponse) {
-//         if (request.message === "checkTabActive") {
-//             // get the tab id from the request
-//             console.log("REACHED HERE");
-//             console.log(request.id);
-//             var tabId = request.id;
-//             // get the tab object
-//             var fetched_tab = await chrome.tabs.get(tabId);
-//             console.log(fetched_tab.active);
-//             console.log(fetched_tab.active === true)
-//             // check if the tab is active
-//             sendResponse({tabStatus: fetched_tab.active});
-//             // return true;
-
-//         }
-//     }
-// );
 
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
@@ -68,7 +50,9 @@ chrome.runtime.onMessage.addListener(
 // run the function when the extension is installed
 chrome.runtime.onInstalled.addListener(function() {
     // Set the default value for the domains
+    const skills = ["coder", "work", "gaming", "entertainment", "education", "influencer", "financial", "universal", "gk", "social"];
     chrome.storage.local.set({domains: {}});
+    chrome.storage.local.set({skills: skills});
 });
 
 // run the function when a new tab is selected

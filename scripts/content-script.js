@@ -5,6 +5,12 @@ function getDomain(url) {
     if (url.indexOf("://") > -1) {
         domain = url.split('/')[2];
     }
+
+    // find and remove www. from the URL
+    else if (url.indexOf("www.") > -1) {
+        domain = url.split('/')[0].split("www.")[1];
+    }
+    
     else {
         domain = url.split('/')[0];
     }
